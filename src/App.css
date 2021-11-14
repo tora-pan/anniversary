@@ -1,0 +1,46 @@
+.app {
+  text-align: center;
+}
+:root {
+  --bright: #f1faee;
+  --background: #e63946;
+  --darkBackground: #94242d;
+  --purple: #1d3557;
+  --blue: #457b9d;
+  --lightBlue: #a8dadc;
+  --black: #000000;
+}
+
+* {
+  font-family: "Poppins", sans-serif;
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+}
+
+h1 {
+  color: var(--bright);
+}
+p {
+  color: var(--black);
+}
+
+li {
+  color: var(--bright);
+}
+li:hover {
+  color: var(--purple);
+}
+
+button {
+  background-color: var(--darkBackground);
+}
+
+.container {
+  color: var(--bright);
+  background-color: var(--background);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
