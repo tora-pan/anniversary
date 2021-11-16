@@ -3,24 +3,28 @@ import "./header.styles.css";
 
 import { Link } from "react-router-dom";
 
-const Header = () => {
+const Header = ({ loggedIn }) => {
   return (
     <div className="header">
       <nav className="navbar">
-        <h1 className="logo">Happy Anniversary </h1>
+        <h1 className="logo">Happy 6th Year Anniversary Sawako!</h1>
         <ul className="navlinks">
-          <Link to="home" className="links">
-            <li>Home</li>
-          </Link>
-          <Link to="about" className="links">
-            <li>About</li>
-          </Link>
-          <Link to="photos" className="links">
-            <li>Photos</li>
-          </Link>
-          <Link to="love" className="links">
-            <li>Love</li>
-          </Link>
+          {!loggedIn && (
+            <Link to="" className="links">
+              <li>Login</li>
+            </Link>
+          )}
+
+          {loggedIn && (
+            <Link to="love" className="links">
+              <li>Mini History</li>
+            </Link>
+          )}
+          {loggedIn && (
+            <Link to="card" className="links">
+              <li>E-Card</li>
+            </Link>
+          )}
         </ul>
       </nav>
     </div>

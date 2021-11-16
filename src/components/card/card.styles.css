@@ -3,7 +3,7 @@
   place-items: center;
   position: relative;
   width: 400px;
-  height: 250px;
+  height: 300px;
   padding: 1rem 2rem;
   margin: 0 1rem;
   border-radius: 1rem;
@@ -34,7 +34,7 @@
   z-index: 2;
   opacity: 1;
   transition: opacity 300ms ease-in-out;
-  color: #606060;
+  color: #ffffff;
 }
 .card .info:hover {
   opacity: 0;
@@ -50,18 +50,18 @@
   /* padding: 2em; */
   height: 100%;
   border-radius: 1rem;
-  background-color: #41f2ff;
+  background-color: #ff416a;
   -webkit-clip-path: circle(12% at 100% 0%);
   clip-path: circle(12% at 100% 0%);
   transition: all 400ms ease-in-out;
   z-index: 1;
 }
 .card .answer p {
-  color: #033f52;
+  color: #ffffff;
   font-size: 1.5rem;
 }
 .card .info:hover + .answer {
-  background-color: rgb(118, 237, 248);
+  background-color: rgb(235, 46, 93);
   -webkit-clip-path: circle(150% at 100% 0%);
   clip-path: circle(150% at 100% 0%);
 }
@@ -71,9 +71,11 @@ img {
   position: absolute;
   top: -2px;
   right: -2px;
-  padding: 0.5rem 1.1rem;
+  padding: 1rem 1rem;
   cursor: pointer;
   z-index: 2;
   opacity: 1;
   width: 100%;
+  height: 100%;
+  object-fit: cover;
 }

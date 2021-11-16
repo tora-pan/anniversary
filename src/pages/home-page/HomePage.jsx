@@ -1,8 +1,9 @@
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
+import Heart from "../../components/heart/Heart";
 import "./homePage.styles.css";
 
-const HomePage = () => {
+const HomePage = ({ setIsLoggedIn }) => {
   const [name, setName] = useState("");
   const [husbandsName, setHusbandsName] = useState("");
   const [date, setDate] = useState();
@@ -16,7 +17,10 @@ const HomePage = () => {
       husbandsName.toLocaleLowerCase() === "travis" &&
       date === "2021-11-18"
     ) {
+      setIsLoggedIn(true);
       navigate("love");
+    } else {
+      alert("You don't remember?!?");
     }
   };
 
@@ -45,6 +49,7 @@ const HomePage = () => {
             When is your anniversary this year?
           </label>
           <input type="date" onChange={(e) => setDate(e.target.value)} />
+          <Heart />
           <button>Submit Answer</button>
         </form>
       </div>
