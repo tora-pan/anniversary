@@ -2,6 +2,7 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: center;
 }
 
 .card-container {
@@ -10,4 +11,27 @@
   justify-content: center;
   align-items: center;
   margin-bottom: 50px;
+}
+
+.love-page > button {
+  font-family: "Asap", sans-serif;
+  cursor: pointer;
+  color: #fff;
+  font-size: 16px;
+  text-transform: uppercase;
+  width: 150px;
+  height: 100px;
+  border: 0;
+  padding: 10px 0;
+  margin-top: -10px;
+  margin-bottom: 100px;
+  margin-left: -5px;
+  border-radius: 5px;
+  background-color: #cf4e59;
+  -webkit-transition: background-color 300ms;
+  -moz-transition: background-color 300ms;
+  transition: background-color 300ms;
+}
+.love-page > button:hover {
+  background-color: #f24353;
 }

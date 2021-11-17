@@ -52,7 +52,7 @@
   border-radius: 1rem;
   background-color: #ff416a;
   -webkit-clip-path: circle(12% at 100% 0%);
-  clip-path: circle(12% at 100% 0%);
+  clip-path: circle(10% at 100% 0%);
   transition: all 400ms ease-in-out;
   z-index: 1;
 }
@@ -69,6 +69,7 @@
 img {
   display: inline-block;
   position: absolute;
+  border-radius: 20%;
   top: -2px;
   right: -2px;
   padding: 1rem 1rem;

@@ -21,7 +21,7 @@ const Header = ({ loggedIn }) => {
             </Link>
           )}
           {loggedIn && (
-            <Link to="card" className="links">
+            <Link to="love/card" className="links">
               <li>E-Card</li>
             </Link>
           )}

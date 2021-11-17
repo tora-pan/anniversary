@@ -1,4 +1,5 @@
 import React from "react";
+
 import Card from "../../components/card/Card";
 import "./lovePage.styles.css";
 import image1 from "../../img/1.JPG";
@@ -43,8 +44,14 @@ import image39 from "../../img/39.JPEG";
 import image40 from "../../img/40.JPEG";
 import image41 from "../../img/41.JPEG";
 import image42 from "../../img/42.JPEG";
-
+import { useNavigate } from "react-router";
 const LovePage = () => {
+  const navigate = useNavigate();
+
+  const handleClick = () => {
+    navigate("card", { replace: true });
+  };
+
   return (
     <div className="love-page">
       <h1>LovePage</h1>
@@ -202,6 +209,7 @@ const LovePage = () => {
         <Card front="Playing in the corn!" comment="10/29/2021" img={image41} />
         <Card front="Love you two!" comment="10/29/2021" img={image42} />
       </div>
+      <button onClick={handleClick}>Read Your Card</button>
     </div>
   );
 };

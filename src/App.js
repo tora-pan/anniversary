@@ -21,7 +21,7 @@ function App() {
               element={<HomePage setIsLoggedIn={setIsLoggedIn} />}
             />
             <Route path="love" element={<LovePage />} />
-            <Route path="card" element={<CardPage />} />
+            <Route path="love/card" element={<CardPage />} />
           </Routes>
         </div>
       </Router>
