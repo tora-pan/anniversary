@@ -206,8 +206,8 @@ const LovePage = () => {
       </div>
       <div className="card-container">
         <Card front="Ba Ba" comment="10/22/2021" img={image40} />
-        <Card front="Playing in the corn!" comment="10/29/2021" img={image41} />
-        <Card front="Love you two!" comment="10/29/2021" img={image42} />
+        <Card front="Playing in the corn!" comment="10/29/2021" img={image42} />
+        <Card front="Love you two!" comment="10/29/2021" img={image41} />
       </div>
       <button onClick={handleClick}>Read Your Card</button>
     </div>
